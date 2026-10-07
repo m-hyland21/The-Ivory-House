@@ -1,0 +1,533 @@
+/* Contact page - sits on top of style.css */
+
+
+/* INTRO */
+.contact-intro {
+  background-color: #f5f1e8;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(198, 161, 91, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(198, 161, 91, 0.06) 0%, transparent 45%);
+  padding: 100px 20px 80px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-intro::before,
+.contact-intro::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c6a15b, transparent);
+  transform: translateX(-50%);
+}
+.contact-intro::before { top: 40px; }
+.contact-intro::after  { bottom: 40px; }
+
+.contact-intro-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contact-intro h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  color: #0f0f0f;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.contact-intro p {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* TWO-COLUMN: DETAILS + FORM */
+.contact-main {
+  background-color: #ffffff;
+  padding: 100px 40px;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.97)),
+    radial-gradient(circle at 50% 0%, rgba(198, 161, 91, 0.12) 0%, transparent 50%);
+}
+
+.contact-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.hotel-info,
+.booking-form {
+  background-color: #ffffff;
+  border: 1px solid #e6dcc3;
+  padding: 40px 36px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.hotel-info h2,
+.booking-form h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  color: #0f0f0f;
+  margin: 10px 0 24px;
+  font-weight: 600;
+}
+
+.hotel-info .ornament,
+.booking-form .ornament {
+  text-align: left;
+  margin: 0 0 10px;
+  padding-left: 0;
+}
+
+.hotel-info .ornament::before,
+.booking-form .ornament::before {
+  display: none;
+}
+
+.hotel-info .ornament::after {
+  display: none;
+}
+
+
+/* CONTACT DETAILS */
+.contact-details {
+  margin: 0 0 30px;
+}
+
+.contact-details dt {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c6a15b;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.contact-details dt:first-child {
+  margin-top: 0;
+}
+
+.contact-details dd {
+  margin: 6px 0 0;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.contact-details dd a {
+  color: #0f0f0f;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(198, 161, 91, 0.4);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-details dd a:hover,
+.contact-details dd a:focus-visible {
+  color: #c6a15b;
+  border-bottom-color: #c6a15b;
+}
+
+.contact-social {
+  padding-top: 24px;
+  border-top: 1px solid rgba(198, 161, 91, 0.2);
+}
+
+.contact-social-label {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c6a15b;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.hotel-info .social-links a {
+  color: #c6a15b;
+  border-color: #c6a15b;
+}
+
+.hotel-info .social-links a:hover {
+  background-color: #c6a15b;
+  color: #ffffff;
+}
+
+
+/* BOOKING FORM */
+.form-intro {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.form-field {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-row .form-field {
+  margin-bottom: 18px;
+}
+
+.booking-form label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0f0f0f;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #c6a15b;
+  margin-left: 2px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #d8ccae;
+  background-color: #fbf9f4;
+  color: #0f0f0f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: #c6a15b;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.15);
+}
+
+.booking-form input.is-invalid,
+.booking-form select.is-invalid,
+.booking-form textarea.is-invalid {
+  border-color: #b33b3b;
+  background-color: #fcf5f5;
+}
+
+.form-error {
+  display: block;
+  font-size: 12px;
+  color: #b33b3b;
+  margin-top: 6px;
+  min-height: 16px;
+  letter-spacing: 0.3px;
+}
+
+.form-counter {
+  display: block;
+  font-size: 11px;
+  color: #999999;
+  text-align: right;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+}
+
+.booking-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit {
+  background-color: #c6a15b;
+  color: #0f0f0f;
+  border: 1px solid #c6a15b;
+  padding: 16px 32px;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.form-submit:hover,
+.form-submit:focus-visible {
+  background-color: transparent;
+  color: #0f0f0f;
+  transform: translateY(-2px);
+}
+
+.form-success {
+  margin-top: 24px;
+  padding: 22px 24px;
+  background-color: rgba(198, 161, 91, 0.08);
+  border: 1px solid #c6a15b;
+  color: #0f0f0f;
+}
+
+.form-success h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  margin: 0 0 10px;
+  color: #c6a15b;
+}
+
+.form-success p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+
+.form-success p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* MAP SECTION */
+.map-section {
+  background-color: #f5f1e8;
+  background-image:
+    radial-gradient(circle at 15% 80%, rgba(198, 161, 91, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(198, 161, 91, 0.06) 0%, transparent 45%);
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 52px;
+  color: #0f0f0f;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.map-embed {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #e6dcc3;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+/* FAQ */
+.contact-faq {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contact-faq h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 52px;
+  color: #0f0f0f;
+  margin: 0 0 40px;
+  font-weight: 600;
+}
+
+.faq-list {
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  border: 1px solid #e6dcc3;
+  margin-bottom: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item.is-open {
+  border-color: #c6a15b;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.faq-question {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: #0f0f0f;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover,
+.faq-question:focus-visible {
+  color: #c6a15b;
+}
+
+.faq-toggle-icon {
+  color: #c6a15b;
+  font-size: 24px;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.faq-item.is-open .faq-toggle-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 28px 22px;
+  border-top: 1px solid rgba(198, 161, 91, 0.2);
+}
+
+.faq-answer p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444444;
+  margin: 18px 0 0;
+}
+
+
+/* EMERGENCY */
+.emergency {
+  background-color: #0f0f0f;
+  background-image:
+    radial-gradient(circle at 0% 100%, rgba(198, 161, 91, 0.10) 0%, transparent 45%),
+    radial-gradient(circle at 100% 0%, rgba(198, 161, 91, 0.08) 0%, transparent 45%);
+  color: #f5f1e8;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.emergency-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.emergency h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 42px;
+  margin: 0 0 20px;
+  color: #c6a15b;
+  font-weight: 600;
+}
+
+.emergency p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d8d2c6;
+  margin: 0 0 14px;
+}
+
+.emergency-number {
+  margin-top: 20px !important;
+}
+
+.emergency-number a {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  color: #c6a15b;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.emergency-number a:hover,
+.emergency-number a:focus-visible {
+  color: #ffffff;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-intro {
+    padding: 80px 20px 60px;
+  }
+  .contact-intro h1 {
+    font-size: 40px;
+  }
+  .contact-intro p {
+    font-size: 16px;
+  }
+
+  .contact-main,
+  .map-section,
+  .contact-faq,
+  .emergency {
+    padding: 70px 20px;
+  }
+
+  .map-section h2,
+  .contact-faq h2 {
+    font-size: 38px;
+  }
+
+  .hotel-info,
+  .booking-form {
+    padding: 30px 24px;
+  }
+
+  .hotel-info h2,
+  .booking-form h2 {
+    font-size: 28px;
+  }
+
+  .faq-question {
+    font-size: 17px;
+    padding: 18px 22px;
+  }
+
+  .faq-answer {
+    padding: 0 22px 18px;
+  }
+
+  .emergency h2 {
+    font-size: 32px;
+  }
+
+  .emergency-number a {
+    font-size: 26px;
+  }
+}

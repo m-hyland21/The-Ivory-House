@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- basic setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Ivory House — a luxury hotel in the heart of Belfast offering timeless elegance, refined comfort, and unforgettable stays.">
+  <title>The Ivory House | Luxury Hotel in Belfast</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- google fonts (Cormorant for headings, Montserrat for body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="logo">
+        <a href="index.html" aria-label="The Ivory House — home">
+          <!-- alt is empty on purpose, text beside it already says the name -->
+          <img src="images/logo.png" alt="" class="logo-image">
+          <span class="logo-text">The Ivory House</span>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Welcome">
+      <!-- separate div so the bg image can zoom without affecting the overlay -->
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <span class="hero-eyebrow">— Belfast —</span>
+          <h1>Welcome to <em>The Ivory House</em></h1>
+          <p class="hero-tagline">Timeless Luxury, Refined Comfort</p>
+          <p class="hero-lede">Experience timeless elegance, refined comfort, and unforgettable stays in the heart of the city.</p>
+          <a href="contact.html" class="hero-button">Book Your Stay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- intro / welcome blurb -->
+    <section class="welcome reveal">
+      <div class="welcome-text">
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h2>A Luxury Stay Like No Other</h2>
+        <p>The Ivory House offers refined interiors, exceptional hospitality, and a truly memorable hotel experience in the heart of the city.</p>
+      </div>
+    </section>
+
+    <!-- FEATURED ROOMS -->
+    <!-- TODO: swap placeholder prices once group decides -->
+    <section class="featured-rooms reveal" aria-labelledby="rooms-heading">
+      <div class="section-heading">
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h2 id="rooms-heading">Featured Rooms</h2>
+        <p class="section-intro">A selection of our most sought-after accommodations, each designed around comfort, craftsmanship and quiet luxury.</p>
+      </div>
+
+      <div class="room-cards">
+
+        <article class="room-card">
+          <div class="room-card-image" style="background-image: url('images/room-deluxe.jpg');" role="img" aria-label="Deluxe room with plush bedding and soft lighting"></div>
+          <div class="room-card-body">
+            <h3>Deluxe Room</h3>
+            <p>Elegant comfort with premium furnishings and a calming atmosphere.</p>
+            <!-- hidden details — jQuery slides this down on hover -->
+            <div class="room-card-hidden">
+              <p>From £240 / night · King bed · City view · Marble bathroom</p>
+            </div>
+            <a href="rooms.html" class="room-button">View Room</a>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <div class="room-card-image" style="background-image: url('images/room-executive.jpg');" role="img" aria-label="Executive suite with seating area"></div>
+          <div class="room-card-body">
+            <h3>Executive Suite</h3>
+            <p>Spacious luxury designed for guests seeking style, comfort, and convenience.</p>
+            <div class="room-card-hidden">
+              <p>From £380 / night · Separate lounge · Workspace · Courtyard view</p>
+            </div>
+            <a href="rooms.html" class="room-button">View Room</a>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <div class="room-card-image" style="background-image: url('images/room-signature.jpg');" role="img" aria-label="Signature suite with chandelier and elegant décor"></div>
+          <div class="room-card-body">
+            <h3>Signature Suite</h3>
+            <p>A sophisticated stay with exclusive touches and timeless design.</p>
+            <div class="room-card-hidden">
+              <p>From £520 / night · Private terrace · Butler service · Rolltop bath</p>
+            </div>
+            <a href="rooms.html" class="room-button">View Room</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- parallax image break -->
+    <section class="parallax-band" aria-hidden="true">
+      <div class="parallax-overlay">
+        <p class="parallax-quote">"A retreat where every detail whispers luxury."</p>
+      </div>
+    </section>
+
+    <!-- A DAY AT THE IVORY HOUSE -->
+    <section class="ivory-day reveal" aria-labelledby="day-heading">
+      <div class="ivory-day-container">
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h2 id="day-heading">A Day at The Ivory House</h2>
+        <p class="ivory-day-intro">From elegant arrival to evening relaxation, every part of the stay is designed around comfort, privacy, and refined hospitality.</p>
+
+        <!-- 4 cards on a 2x2 grid, jQuery staggers them in on scroll -->
+        <div class="day-timeline">
+          <div class="day-step">
+            <span class="day-time">2:00 PM</span>
+            <h3>Arrival &amp; Welcome</h3>
+            <p>Guests are welcomed into a calm, luxurious setting with attentive service from the moment they arrive.</p>
+          </div>
+          <div class="day-step">
+            <span class="day-time">4:00 PM</span>
+            <h3>Afternoon Indulgence</h3>
+            <p>Spend the afternoon unwinding with quiet lounge spaces, in-room comfort, or curated hotel experiences.</p>
+          </div>
+          <div class="day-step">
+            <span class="day-time">7:00 PM</span>
+            <h3>Evening Dining</h3>
+            <p>Enjoy elegant dining, ambient interiors, and a beautifully considered evening experience.</p>
+          </div>
+          <div class="day-step">
+            <span class="day-time">10:00 PM</span>
+            <h3>Night Retreat</h3>
+            <p>Retire to a suite designed for deep comfort, privacy, and a truly restful night's stay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURATED STAYS - tabs, handled in script.js -->
+    <section class="curated-stays reveal" aria-labelledby="curated-heading">
+      <div class="curated-stays-container">
+        <span class="ornament light" aria-hidden="true">✦</span>
+        <h2 id="curated-heading">Curated Stays</h2>
+        <p class="curated-intro">Choose the kind of experience you are looking for and discover the stay that best suits you.</p>
+
+        <!-- buttons carry a data-stay so JS knows which text to load -->
+        <div class="stay-options" role="tablist" aria-label="Stay types">
+          <button class="stay-button active-stay" data-stay="romantic" role="tab" aria-selected="true" aria-controls="stay-result">Romantic Escape</button>
+          <button class="stay-button" data-stay="business" role="tab" aria-selected="false" aria-controls="stay-result">Business Retreat</button>
+          <button class="stay-button" data-stay="weekend" role="tab" aria-selected="false" aria-controls="stay-result">Weekend Indulgence</button>
+        </div>
+
+        <!-- aria-live so screen readers pick up the content swap -->
+        <div class="stay-result" id="stay-result" role="tabpanel" aria-live="polite">
+          <h3>Romantic Escape</h3>
+          <p>Ideal for couples seeking a peaceful, elegant stay with refined interiors, intimate dining, and a calm luxurious atmosphere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY STAY WITH US -->
+    <section class="highlights reveal" aria-labelledby="highlights-heading">
+      <span class="ornament gold" aria-hidden="true">✦</span>
+      <h2 id="highlights-heading">Why Stay With Us</h2>
+      <p class="section-intro light">Four pillars of the Ivory House experience. Select any to learn more.</p>
+
+      <!-- each button has its own detail text stored as a data attr -->
+      <div class="highlight-list">
+        <button class="highlight-item" data-detail="Our award-winning restaurant serves seasonal tasting menus paired with an extensive cellar of fine wines.">
+          <span class="highlight-label">Fine Dining</span>
+        </button>
+        <button class="highlight-item" data-detail="Forty individually designed suites featuring handcrafted furnishings, marble bathrooms and Egyptian cotton linens.">
+          <span class="highlight-label">Luxury Suites</span>
+        </button>
+        <button class="highlight-item" data-detail="A tranquil spa with steam rooms, a heated indoor pool, and a full menu of signature treatments.">
+          <span class="highlight-label">Spa &amp; Wellness</span>
+        </button>
+        <button class="highlight-item" data-detail="Moments from Belfast's cultural quarter, with concierge-arranged transport to anywhere in the city.">
+          <span class="highlight-label">Central Location</span>
+        </button>
+      </div>
+
+      <!-- panel that slides down when a button is clicked -->
+      <div class="highlight-detail" id="highlight-detail" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+  <h3>The Ivory House</h3>
+  <p>Timeless Luxury, Refined Comfort</p>
+
+  <!-- social links -->
+  <div class="social-links" aria-label="Social media">
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+      <!-- Instagram icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.5 8.5 2.5 8.9 2.5 12s0 3.5.1 4.8c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1c2.7 0 4.9 2.2 4.9 4.9s-2.2 4.9-4.9 4.9-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9zm0 8.1c1.8 0 3.2-1.4 3.2-3.2s-1.4-3.2-3.2-3.2-3.2 1.4-3.2 3.2 1.4 3.2 3.2 3.2zm5.1-8.3c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1.5-1.1 1.1-1.1 1.1.5 1.1 1.1z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+      <!-- Facebook icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+        <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Ivory House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- jQuery first, then my script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

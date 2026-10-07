@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- basic setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the facilities at The Ivory House — from our award-winning restaurant and tranquil spa to luxury suites and attentive concierge service.">
+  <title>Facilities | The Ivory House</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- shared site styles then page-specific styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/facilitiesStyle.css">
+</head>
+<body>
+
+  <!-- skip link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="logo">
+        <a href="index.html" aria-label="The Ivory House — home">
+          <img src="images/logo.png" alt="" class="logo-image">
+          <span class="logo-text">The Ivory House</span>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="facilities.html" aria-current="page">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE INTRO -->
+    <section class="facilities-intro">
+      <div class="facilities-intro-content">
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h1>Facilities &amp; Services</h1>
+        <p>Four pillars of the Ivory House experience, each curated with care to enrich every moment of your stay.</p>
+      </div>
+    </section>
+
+    <!-- FACILITY CARDS -->
+    <section class="facility-grid-section reveal" aria-labelledby="facilities-heading">
+      <div class="section-heading">
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h2 id="facilities-heading">Our Facilities</h2>
+        <p class="section-intro">Select any facility to learn more about what's on offer.</p>
+      </div>
+
+      <div class="facility-grid">
+
+        <article class="facility-card">
+          <div class="facility-icon" aria-hidden="true">
+            <!-- dining icon (knife & fork) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 2v20M7 8c-1.5 0-3-1-3-3V2M7 8c1.5 0 3-1 3-3V2"/>
+              <path d="M17 2c-1.5 0-3 2-3 5s1.5 5 3 5v10"/>
+            </svg>
+          </div>
+          <h3>Fine Dining</h3>
+          <p class="facility-desc">Seasonal tasting menus, heritage ingredients, and a cellar curated over decades.</p>
+          <button class="facility-toggle" aria-expanded="false" aria-controls="dining-detail">Learn More</button>
+          <div class="facility-detail" id="dining-detail">
+            <p>Our award-winning restaurant, <em>The Orangery</em>, serves refined seasonal tasting menus under the direction of head chef Marcus Ainsley. A private dining room accommodates up to twelve guests, and our sommelier curates pairings from a cellar of over four hundred labels.</p>
+            <ul class="facility-meta">
+              <li><strong>Hours:</strong> Breakfast 7–10am · Dinner 6:30–10pm</li>
+              <li><strong>Dress code:</strong> Smart / smart casual</li>
+              <li><strong>Reservations:</strong> Recommended for dinner</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-icon" aria-hidden="true">
+            <!-- luxury suites icon (bed) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 20V10a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10"/>
+              <path d="M2 16h20"/>
+              <path d="M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/>
+              <path d="M2 20h20"/>
+            </svg>
+          </div>
+          <h3>Luxury Suites</h3>
+          <p class="facility-desc">Forty individually designed suites with handcrafted furnishings and marble bathrooms.</p>
+          <button class="facility-toggle" aria-expanded="false" aria-controls="suites-detail">Learn More</button>
+          <div class="facility-detail" id="suites-detail">
+            <p>Each of our forty suites has been individually designed, featuring handcrafted furnishings, marble bathrooms, and Egyptian cotton linens. In-room amenities include a Nespresso machine, complimentary mini bar, and bespoke toiletries commissioned from a local perfumer.</p>
+            <ul class="facility-meta">
+              <li><strong>Turn-down:</strong> Nightly from 6pm</li>
+              <li><strong>Room service:</strong> 24 hours</li>
+              <li><strong>Housekeeping:</strong> Daily with on-request top-up</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-icon" aria-hidden="true">
+            <!-- spa icon (leaf/wellness) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2s-5 5-5 10a5 5 0 0 0 10 0c0-5-5-10-5-10z"/>
+              <path d="M12 12v10"/>
+              <path d="M8 18c2 0 3-1 4-3M16 18c-2 0-3-1-4-3"/>
+            </svg>
+          </div>
+          <h3>Spa &amp; Wellness</h3>
+          <p class="facility-desc">A tranquil spa with steam rooms, indoor pool, and a full menu of signature treatments.</p>
+          <button class="facility-toggle" aria-expanded="false" aria-controls="spa-detail">Learn More</button>
+          <div class="facility-detail" id="spa-detail">
+            <p>Our subterranean spa offers six treatment rooms, a eucalyptus steam room, Finnish sauna, and a heated indoor pool lit by candlelight in the evenings. Signature treatments include the Ivory Ritual — a two-hour journey of exfoliation, massage, and restorative facial.</p>
+            <ul class="facility-meta">
+              <li><strong>Hours:</strong> Daily 7am–9pm</li>
+              <li><strong>Pool access:</strong> Complimentary for guests</li>
+              <li><strong>Treatments:</strong> Bookable via concierge</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-icon" aria-hidden="true">
+            <!-- concierge icon (bell) -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 18h16"/>
+              <path d="M4 18c0-5 3-9 8-9s8 4 8 9"/>
+              <path d="M12 9V5"/>
+              <path d="M10 5h4"/>
+              <circle cx="12" cy="21" r="1"/>
+            </svg>
+          </div>
+          <h3>Concierge &amp; Location</h3>
+          <p class="facility-desc">Moments from Belfast's cultural quarter, with a 24-hour concierge to arrange anything you need.</p>
+          <button class="facility-toggle" aria-expanded="false" aria-controls="concierge-detail">Learn More</button>
+          <div class="facility-detail" id="concierge-detail">
+            <p>Set in the heart of Belfast's cultural quarter, The Ivory House is a short walk from the city's finest galleries, theatres, and restaurants. Our concierge team is available around the clock to arrange transport, tickets, private tours, and bespoke excursions across Northern Ireland.</p>
+            <ul class="facility-meta">
+              <li><strong>Concierge:</strong> 24 hours</li>
+              <li><strong>Valet parking:</strong> On request</li>
+              <li><strong>Airport transfer:</strong> Complimentary for Signature guests</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="facility-faq reveal" aria-labelledby="faq-heading">
+      <div class="faq-container">
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h2 id="faq-heading">Frequently Asked</h2>
+        <p class="section-intro">A few things guests often ask before arrival.</p>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              <span>Are facilities included in the room rate?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-1">
+              <p>Access to the spa pool, steam room, and fitness suite is complimentary for all registered guests. Dining, treatments, and some bespoke concierge services are charged separately.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              <span>Do I need to book the spa in advance?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-2">
+              <p>The pool and steam room are walk-in. Treatments should be booked at least 24 hours in advance — our concierge can arrange this for you at check-in or via the in-room phone.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              <span>Is the restaurant open to non-residents?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-3">
+              <p>Yes. The Orangery welcomes non-residents for both lunch and dinner. We recommend booking at least a week in advance for weekend dinner service.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              <span>Can you accommodate dietary requirements?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-4">
+              <p>Absolutely. Our kitchen can accommodate vegetarian, vegan, gluten-free, and most allergy-related requirements with advance notice. Please inform us at the time of booking.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="facilities-cta reveal">
+      <span class="ornament gold" aria-hidden="true">✦</span>
+      <h2>Experience It For Yourself</h2>
+      <p>Every facility at The Ivory House is designed to make your stay extraordinary.</p>
+      <a href="contact.html" class="hero-button">Book Your Stay</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>The Ivory House</h3>
+        <p>Timeless Luxury, Refined Comfort</p>
+
+        <div class="social-links" aria-label="Social media">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.5 8.5 2.5 8.9 2.5 12s0 3.5.1 4.8c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1c2.7 0 4.9 2.2 4.9 4.9s-2.2 4.9-4.9 4.9-4.9-2.2-4.9-4.9 2.2-4.9 4.9-4.9zm0 8.1c1.8 0 3.2-1.4 3.2-3.2s-1.4-3.2-3.2-3.2-3.2 1.4-3.2 3.2 1.4 3.2 3.2 3.2zm5.1-8.3c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1.5-1.1 1.1-1.1 1.1.5 1.1 1.1z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>18 Wellington Square, Belfast</p>
+        <p>+44 28 9000 1234</p>
+        <p>reservations@theivoryhouse.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Ivory House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/facilities.js"></script>
+</body>
+</html>
